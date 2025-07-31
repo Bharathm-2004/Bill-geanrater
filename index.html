@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 ">
+        <div class="products mb-0 pb-0 ">
+        
+        </div>
+        <div class="user_form card shadow-sm p-4 mb-5 bg-white rounded">
+          <form action="#">
+            <div class="row mb-3 mt-3">
+                <div class="col-md-6">
+                    <label for="username" class="form-label fw-bold">Name:</label><br>
+                    <input type="text" name="username" placeholder="Enter customer name" id="user_name" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="mobile" class="form-label fw-bold">Mobile:</label><br> 
+                    <input type="tel" name="mobile" placeholder="Enter phone number" id="mobile" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 ">
+                <label for="address" class="form-label fw-bold">Address:</label><br>
+                <textarea name="address" id="address" class="form-control" placeholder="Enter full address"></textarea>            
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="pro_name" class="form-label fw-bold">Product Name:</label><br>
+                    <input type="text" name="pro_name" placeholder="Enter product name" id="pro_name" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label for="" class="form-label fw-bold">Quantity:</label><br>
+                    <input type="number" name="" id="pro_qty" onchange="get_tot_price()" class="form-control">
+                </div>
+                <div class="col-md-3 ">
+                    <label for="" class="form-label fw-bold">Total price:</label><br>
+                    <input type="number" name="" id="tot_price" class="form-control">
+                </div>
+            </div>
+           
+         </form>
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 my-3" id="btn">
+                    Submit order
+                </button>
+            </div>
+        </div>
+        <div class="show shadow-lg bg-white rounded mb-5">
+
+        </div>
+    </div>
+   
+
+    <script src="./index.js"></script>
+</body>
+</html>
